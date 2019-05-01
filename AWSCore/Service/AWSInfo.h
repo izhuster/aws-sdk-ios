@@ -29,6 +29,8 @@ FOUNDATION_EXPORT NSString *const AWSInfoDefault;
 
 + (instancetype)defaultAWSInfo;
 
++ (void)overrideCredentialsProvider:(AWSCognitoCredentialsProvider *)cognitoCredentialsProvider;
+
 - (nullable AWSServiceInfo *)serviceInfo:(NSString *)serviceName
                                   forKey:(NSString *)key;
 
